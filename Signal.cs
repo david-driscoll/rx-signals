@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Reactive.Concurrency;
 using System.Reactive.Disposables;
 using System.Reactive.Linq;
@@ -30,13 +31,8 @@ namespace rx_signals
             get => Volatile.Read(ref _context).Value;
             set
             {
+                if (EqualityComparer<T>.Default.Equals(_context.Value, value)) return;
                 _context.OnNext(value);
-                // Context.QueueAction(() =>
-                // {
-                //     var currentSnapshot = _snapshot;
-                //     Volatile.Write(ref _snapshot, new Snapshot(value));
-                //     currentSnapshot.Notify();
-                // });
             }
         }
 

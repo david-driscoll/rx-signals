@@ -16,6 +16,13 @@ namespace rx_signals
 
             var d = Merge(a, b, c).ToSignal();
 
+            var dotnotdothis = d.Subscribe(x => d.Value = x);
+
+            d.Subscribe(x =>
+            {
+                var _ = x.ToString();
+            });
+
             Report();
 
             d.Value = 9;
@@ -29,7 +36,6 @@ namespace rx_signals
             await Task.Delay(500);
 
             Report();
-
 
 
             void Report()
