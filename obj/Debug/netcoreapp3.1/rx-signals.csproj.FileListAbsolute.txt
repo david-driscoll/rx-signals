@@ -1,0 +1,16 @@
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.csprojAssemblyReference.cache
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.AssemblyInfoInputs.cache
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.AssemblyInfo.cs
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals.deps.json
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals.runtimeconfig.json
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals.runtimeconfig.dev.json
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals.dll
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/rx-signals.pdb
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/System.Interactive.dll
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/System.Interactive.Async.dll
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/System.Linq.Async.dll
+/home/vsonline/workspace/rx-signals/bin/Debug/netcoreapp3.1/System.Reactive.dll
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.csproj.CopyComplete
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.dll
+/home/vsonline/workspace/rx-signals/obj/Debug/netcoreapp3.1/rx-signals.pdb
