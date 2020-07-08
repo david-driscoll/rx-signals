@@ -21,8 +21,6 @@ namespace rx_signals
             _context = new BehaviorSubject<T>(value);
             _subscription = source
                 .ObserveOn(Scheduler.Immediate)
-                .Publish()
-                .RefCount()
                 // do not want to complete if the source completes
                 .Subscribe(_context.OnNext, _context.OnError);
         }
