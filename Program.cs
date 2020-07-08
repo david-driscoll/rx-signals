@@ -11,7 +11,7 @@ namespace rx_signals
         {
 
             var a = new Signal<int>(Return(1));
-            var b = Return(2).ToSignal();
+            var b = Return(2).Concat(Timer(TimeSpan.FromMilliseconds(100)).Select(z => 10)).ToSignal();
             var c = Return(3).ToSignal();
 
             var d = Merge(a, b, c).ToSignal();
@@ -34,11 +34,13 @@ namespace rx_signals
 
             void Report()
             {
+                Console.WriteLine($"");
                 Console.WriteLine($"-------------");
                 Console.WriteLine($"A: {a.Value}");
                 Console.WriteLine($"B: {b.Value}");
                 Console.WriteLine($"C: {c.Value}");
                 Console.WriteLine($"D: {d.Value}");
+                Console.WriteLine($"-------------");
             }
         }
     }
