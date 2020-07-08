@@ -18,6 +18,10 @@ namespace rx_signals
 
             Report();
 
+            d.Value = 9;
+
+            Report();
+
             a.Value = 5;
 
             Report();
